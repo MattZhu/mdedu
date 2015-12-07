@@ -1,0 +1,33 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.\
+        .NoTitleBar
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+         <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+     	<item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    
+      <!-- ActionBar styles -->
+    <style name="MyActionBar"
+           parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/navbar_bg</item>
+		<item name="overlapAnchor">false</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/navbar_bg</item>
+    </style>
+    <color name="navbar_bg">#5cB305</color>
+
+</resources>

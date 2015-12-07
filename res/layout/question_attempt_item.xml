@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/time_used_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="@string/time_used"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/time_used_label"
+        android:layout_toRightOf="@id/time_used_label"
+        android:padding="2dp"
+        android:text="1"
+        android:textSize="16sp" />
+     <TextView
+        android:id="@+id/total_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="2dp"
+        android:text="2"
+        android:textSize="16sp" />
+	<TextView
+        android:id="@+id/total_correct_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/total_correct"
+        android:layout_toStartOf="@id/total_correct"
+        android:padding="2dp"
+        android:text="@string/total_correct"
+        android:textSize="16sp" />
+
+   
+    <TextView
+        android:id="@+id/submit_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_used_label"
+        android:padding="2dp"
+        android:text="@string/submit_date"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/submit_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/submit_date_label"
+        android:layout_toRightOf="@id/submit_date_label"
+        android:textSize="16sp"
+        android:layout_alignTop="@id/submit_date_label"
+        android:text="2"
+         />
+
+</RelativeLayout>
